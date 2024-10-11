@@ -1,0 +1,276 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: rgba(233, 233, 233, 1);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+a, p, span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+
+.main-form-second-wrap{
+    padding: 40px 0;
+}
+.custm-container {
+	max-width: 1140px;
+	margin: 0 auto;
+	width: 100%;
+	background: #fff;
+    padding: 20px 0;
+}
+
+
+/* Timeline style */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.timeline-step {
+    text-align: center;
+    flex-grow: 1;
+    position: relative;
+}
+.timeline-step .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    line-height: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+    color: white;
+    font-size: 25px;
+}
+.timeline-step.active .icon {
+    background-color: #7a7c7e;
+    color: white;
+}
+.timeline-step.completed .icon {
+    background-color: #BEAF87; /* Completed step color */
+    color: white;
+}
+.timeline-step.completed .icon i {
+    color: white;
+}
+.timeline-line {
+    position: absolute;
+    height: 4px;
+    background: #D9D9D9;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.timeline-line-active {
+    position: absolute;
+    height: 4px;
+    background: #BEAF87;
+    bottom: -10px;
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+
+/* input field */
+input {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	padding: 12px 20px;
+	border-radius: 10px;
+	margin: 10px 12px;
+    font-size: 17px;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.45);
+}
+input:focus{
+    outline: 1px solid rgba(190, 175, 135, 1);
+}
+.w-2 input{
+    width: 47%;
+}
+.w-3 input{
+    width: 30.3%;
+}
+.w-4 input{
+    width: 22%;
+}
+.slider-container input{
+    padding: 0;
+    margin: 0;
+}
+.slider-container input:focus{
+    outline: none;
+}
+
+
+/* Hide all forms except the first step */
+.form-step {
+	display: none;
+	background: rgba(233, 233, 233, 1);
+	padding: 30px 20px;
+	border-radius: 20px;
+	max-width: 950px;
+    width: 100%;
+	margin: 50px auto 30px;
+    position: relative;
+}
+
+.form-step.active {
+    display: block;
+}
+
+/* Global button styling */
+.global-nav-buttons {
+	display: flex;
+	justify-content: space-between;
+	max-width: 910px;
+	width: 90%;
+	margin: 0 auto;
+}
+.global-nav-buttons .btn-primary {
+	background: rgba(190, 175, 135, 1);
+	border: 1px solid rgba(190, 175, 135, 1);
+	padding: 0 25px;
+}
+.global-nav-buttons .btn-primary:focus{
+	background: rgb(166, 151, 111);
+	border: 1px solid rgb(166, 151, 111);
+}
+.global-nav-buttons .btn-primary:hover{
+	background: rgb(166, 151, 111);
+	border: 1px solid rgb(166, 151, 111);
+}
+
+/* form-title */
+.form-title {
+	font-size: 22px;
+	color: rgba(0, 0, 0, 1);
+	margin: 25px 15px 15px;
+}
+
+
+/* Loan Amount Desired Field */
+
+.slider-container {
+	width: 79%;
+	margin: 0 auto;
+}
+.slider-value{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.slider-labels {
+	padding: 0 37px;
+}
+.slider-labels span {
+	font-size: 16px;
+	font-weight: 500;
+    display: inline-block;
+}
+
+.submitBtn button {
+	position: absolute;
+	right: 29px;
+	bottom: -69px;
+}
+
+
+/* Step-2 Slider */
+.slider-container {
+    width: 80%;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.slider-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.range-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 14px;
+    background: #e0e0e0;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .15s ease-in-out;
+    border-radius: 15px;
+}
+
+.range-slider:hover {
+    opacity: 1;
+}
+
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border: 3px solid #c0a97e; /* Gold border */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border: 3px solid #c0a97e; /* Gold border */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.slider-labels div {
+    color: #666;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    .w-2 input{
+        width: 100%;
+    }
+    .w-3 input{
+        width: 100%;
+    }
+    .w-4 input{
+        width: 100%;
+    }
+    .timeline-step .timeline-label {
+        font-size: 11px;
+    }
+    .timeline-step .icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+}
